@@ -1,0 +1,37 @@
+===============================
+Demonstrating usage of doctest
+===============================
+
+1. This doctest checks functionality of  python's plus operator.
+
+>>> 2 + 4
+6
+>>> -10.5 + 8
+-2.5
+
+
+2. The below doctest checks functionality of add2num function
+
+>>> def add2num(x, y):
+...       "This function returns sum of two numbers."
+...       return x + y
+>>> add2num(6, 7)
+13
+>>> add2num(-8.5, 7)
+-1.5
+>>> add2num(8, 'hello')
+Traceback (most recent call last):
+ValueError: unsupported operand type(s) for +: 'int' and 'str'
+
+
+3. This doctest checks functionality of insertlines function
+>>> def insertlines(n):
+...    print('Start')
+...    for i in range(n):
+...        print()
+...    print('End')
+>>> insertlines(2)
+Start
+<BLANKLINE>
+<BLANKLINE>
+End
